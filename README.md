@@ -5,6 +5,11 @@ To run this, download [the official dataset](https://github.com/bmild/nerf/blob/
 I will make sure to implement more features in the near future.
 
 ## Requirement
-PyTorch
-Numpy
-pillow
+PyTorch  
+Numpy  
+pillow  
+tqdm  
+matplotlib
+
+<!-- ## Usage
+```bash -->
