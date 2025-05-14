@@ -7,13 +7,13 @@ I will make sure to implement more features in the near future.
     <td>
       <figure>
         <img src="img/lego_test_15.png" width="300"><br>
-        <figcaption style="text-align: center;">Test data of the lego</figcaption>
+        <figcaption style="text-align: center;">The test data of the lego</figcaption>
       </figure>
     </td>
     <td>
       <figure>
         <img src="img/ship_test_15.png" width="300"><br>
-        <figcaption style="text-align: center;">Test data of the ship</figcaption>
+        <figcaption style="text-align: center;">The test data of the ship</figcaption>
       </figure>
     </td>
   </tr>
