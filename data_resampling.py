@@ -5,16 +5,21 @@ import os
 from tqdm import tqdm
 from PIL import Image
 
-base_dir = 'data/nerf_synthetic/lego'
-splits = ['train', 'val', 'test']
-
 parser = argparse.ArgumentParser()
 parser.add_argument("--resolution", required=True,
+                    help="Resampling resolution")
+parser.add_argument("--dirname",
                     help="Resampling resolution")
 
 args = parser.parse_args()
 resol = int(args.resolution)
 output_suffix = f'_{resol}'
+
+if args.dirname:
+    base_dir = os.path.join('data/nerf_synthetic', args.dirname)
+    splits = ['train', 'val', 'test']
+else:
+    base_dir = 'data/nerf_synthetic/lego'
 
 for split in splits:
     input_json = os.path.join(base_dir, f'transforms_{split}.json')
